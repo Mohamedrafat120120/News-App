@@ -1,9 +1,6 @@
 export async function sportsApi() {
   const live = document.querySelector(".ls")
-  // if (!tbody) {
-  //   console.error("tbody not found")
-  //   return
-  // }
+
 
   try {
     const data = await fetch(

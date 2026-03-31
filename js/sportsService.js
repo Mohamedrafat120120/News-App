@@ -7,8 +7,7 @@ export async function sportsSectionApi() {
 
   const response = await data.json();
 
-  let cards = `<h2>Sports</h2>
-  <hr class="line" />`;
+  let cards = ` `;
 
   let general = response.articles.slice(0, 4);
 

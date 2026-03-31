@@ -8,11 +8,13 @@ export async function weatherApi() {
   
   let weather=response.current
   let weatherSeaction = `
-    <div class="temp">🌡 Temp: ${weather.temp_c}°C</div>
+  <div class="temp-icon">
+  <div class="temp">🌡 Temp: ${weather.temp_c}°C</div><img src="https:${weather.condition.icon}" /></div>
+    
     <div>🌤 Condition: ${weather.condition.text}</div>
     <div>💨 Wind: ${weather.wind_kph} kph</div>
     <div>💧 Humidity: ${weather.humidity}%</div>
-    <img src="https:${weather.condition.icon}" />
+    
   `;
 
     w.innerHTML=weatherSeaction;

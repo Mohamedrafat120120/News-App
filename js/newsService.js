@@ -1,8 +1,5 @@
-// <<<<<<< HEAD
-// let politcs=document.querySelector(".politics")
-// =======
+
 let politcs=document.querySelector(".policts-cards")
-// >>>>>>> 38593c8 (all feature done)
 
 export async function newsApi(){
   const data = await fetch(
@@ -10,12 +7,8 @@ export async function newsApi(){
   );
 
   const response = await data.json();
-// <<<<<<< HEAD
-  let cards=`<h2>politics</h2>
-  <hr class="line" />`
-// =======
-//   let cards=` `
-// >>>>>>> 38593c8 (all feature done)
+  let cards=``
+
   let general=response.articles.slice(0,4)
 for(let i=0;i<general.length;i++){
           cards+=`
